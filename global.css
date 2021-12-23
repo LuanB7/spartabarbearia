@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Fontes/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url(Fontes/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Fontes/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: calc(1.1618 / 1.618 * 2);
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 1.1618;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.dentro-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-box {  
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+    padding: 5px;
+    font-family: 'PoppinsRegular';
+}
+    header nav ul li a::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0%;
+        background-color: rgb(238, 0, 40);
+        left: 0;
+        border-radius: 1000px;
+        position: absolute;
+        transition: 0.4s;
+    }
+
+    header nav ul li a:hover::after {
+        width: 100%;
+    }
+
+/*HEADER LOGO*/
+
+.header-logo {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-logo-primeira-palavra {
+    color: rgb(238, 0, 40);
+}
+
+.header-logo-segunda-palavra {
+    font-size: 20px;
+}
+
+/*SEÇÕES*/
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.dentro-header {
+    max-width: 1600px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.dentro-secao {
+    width: calc(100% - 14%);
+    margin-left: 7%;
+    margin-right: 7%;
+    max-width: 1600px;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: calc(100px);
+    /*padding-bottom: 100px;*/
+    padding-bottom: 130px;
+    color: white;
+
+    /*exclusivo*/ border-radius: 12px 12px 0px 0px;
+    
+}
+
+    .dentro-footer {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-image-box, .footer-links-rapidos, .footer-redes-sociais {
+        width: 33.333%;
+      
+        height: 100%;
+    }
+
+        .footer-image-box {
+            display: flex;
+            align-items: center;
+        }
+        .footer-image-box img {
+            width: 40%;
+        }
+        
+
+        .footer-links-rapidos h3, .footer-redes-sociais h3 {
+            margin-bottom: 25px;
+            font-size: 20px;
+            font-family: 'Poppins';
+        }
+
+        footer ul li, footer a{
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .footer-links-rapidos li {
+            /*margin-bottom: 12.5px;*/
+            margin-bottom: 10px;
+            /*font-size: 16px;*/
+            font-size: 15px;
+        }
+            .footer-links-rapidos li a {
+                color: rgba(239, 250, 255, 0.7);
+                transition: 0.3s;
+            }
+                .footer-links-rapidos li a:hover {
+                    color: white;
+                }
+
+        .footer-links-rapidos a i {
+            color: rgb(238, 0, 40);
+            margin-right: 7px;
+        }
+
+        .footer-redes-sociais p {
+            color: rgb(238, 0, 40);
+        }
+
+        .footer-s-medias {
+            margin-top: 25px;
+        }
+
+        .footer-s-medias a {
+            color: white;
+            font-size: 25px;
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+            .footer-s-medias a:hover {
+                color: rgb(238, 0, 40);
+            }
+
+
+
+/*Agendar Modal*/
+
+.agendar-box-modal-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+
+    display: none;
+}
+
+.agendar-box-modal {
+    position: fixed;
+    height: 70%;
+    width: 30%;
+    background-color: rgb(38, 41, 41);
+
+    border-radius: 7px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agendar-box-modal-fundo-escuro {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+
+    display: none;
+    
+}
+
+.dentro-agendar-box-modal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.agendar-box-modal h1 {
+    color: rgb(238, 0, 40);
+}
+
+.agendar-box-modal-botoes {
+    height: calc(100% - 32px - 20px);
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(65, 71, 71);
+    display: block;
+    position: relative;
+
+}
+
+
+/*Ponto vermelho no final de alguns textos*/
+.ponto-vermelho {
+    color: rgb(238, 0, 40);
+}
+
+
+
+
