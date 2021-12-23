@@ -1,0 +1,155 @@
+@media screen and (max-width: 800px) {
+
+    /*Seção 1*/
+
+    .dentro-secao-1 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .secao-1-direita, .secao-1-esquerda {
+        width: 100%;
+        height: auto;
+    }
+    
+    .secao-1-esquerda h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    
+    .secao-1-esquerda p {
+        font-size: 19px;
+        margin-top: 15px;
+    }
+
+    
+    .secao-1-direita {
+        display: block;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+    
+    .secao-1-direita-imagem {
+        
+        margin-left: 0;
+        height: 200px;
+      
+        display: block;
+        padding-bottom: 25%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        
+       
+    }
+    
+    .secao-1-direita-imagem img {
+        margin-top: 30%;
+        width: 100%;
+        
+    }
+
+    /*Seção 2*/
+
+    .secao-2 {
+        margin-top: 150px;
+    }
+
+    .dentro-secao-2 h2 {
+        font-size: 30px;
+    }
+
+    .secao-2-topicos-horizontais-box {
+        flex-direction: column;
+    }
+
+    .secao-2-topico-horizontal {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .secao-2-topico-horizontal h2 {
+        font-size: 22px;
+        color: rgb(82, 82, 82);
+        margin-top: 15px;
+    }
+
+    .secao-2 {
+        padding-bottom: calc(70px - 40px);
+    }
+
+
+    /*Seção 3*/
+
+    .secao-3 {
+        padding-bottom: 70px;
+    }
+
+    .secao-3 h2 {
+        font-size: 30px;
+    }
+
+    .secao-3-big-box {
+        margin-top: 70px;
+    }
+
+    .dentro-secao-3-big-box-texto {
+        width: 100%;
+    }
+
+    .dentro-secao-3-big-box-icon {
+        display: none;
+    }
+
+    .dentro-secao-3-big-box-texto p {
+        font-size: 19px;
+    }
+
+    .secao-3-servicos-box {
+        flex-direction: column;
+    }
+
+    .secao-3-servico {
+        width: 100%;
+        
+    }
+        .secao-3-servico-direita-titulo {
+            font-size: 19px;
+        }
+
+        .secao-3-servico-preco {
+            font-size: 18px;
+        }
+
+        .secao-3-servico-esquerda i {
+            font-size: 55px;
+        }
+
+
+
+
+
+
+
+
+    /*Seção 4*/
+    .secao-4 h2 {
+        font-size: 30px;
+    }
+
+    .secao-4-lista-de-premios li {
+        font-size: 20px;
+    }
+
+    .secao-4-lista-de-premios li i {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    
+}
