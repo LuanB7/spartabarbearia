@@ -1,3 +1,18 @@
+@media screen and (max-width: 900px) {
+    .agendar-box-modal {
+        position: fixed;
+        height: 50%;
+        width: 70%;
+        background-color: rgb(38, 41, 41);
+    
+        border-radius: 7px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     /*Header*/
@@ -69,5 +84,37 @@
         margin-bottom: 20px;
     }
 
+
+    /*Agendar modal*/
+    .agendar-box-modal {
+        padding: 30px;
+
+    }
+
+    .agendar-box-modal-botoes-box {
+        height: calc(100% - 32px - 25px);
+        margin-top: 20px;
+        width: 100%;
+    
+        display: block;
+        position: relative;
+    }
+
+    .agendar-box-modal h1 {
+        font-size: 20px;
+    }
+
+    .agendar-box-modal-botao-agendar {
+        font-size: 17px;
+    }
+
+    .agendar-box-option i {
+        width: 25%;
+        font-size: 25px;
+    }
+    
+    .agendar-option-nome {
+        font-size: 19px;
+    }
 
 }

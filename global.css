@@ -243,6 +243,19 @@ footer {
 
 /*Agendar Modal*/
 
+@keyframes agendarModal {
+    0% {
+        transform: scale(0.8);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(none);
+    }
+}
+
 .agendar-box-modal-box {
     position: fixed;
     width: 100%;
@@ -252,12 +265,18 @@ footer {
     align-items: center;
     top: 0;
 
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.5s;
+    pointer-events: none;
+
+    animation: agendarModal 1s;
 }
 
 .agendar-box-modal {
     position: fixed;
-    height: 70%;
+    height: 60%;
     width: 30%;
     background-color: rgb(38, 41, 41);
 
@@ -266,17 +285,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    pointer-events: all;
 }
 
 .agendar-box-modal-fundo-escuro {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     top: 0;
 
-    display: none;
-    
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transition: 0.5s;
 }
 
 .dentro-agendar-box-modal {
@@ -290,14 +313,91 @@ footer {
     color: rgb(238, 0, 40);
 }
 
-.agendar-box-modal-botoes {
+.agendar-box-modal-botoes-box {
     height: calc(100% - 32px - 20px);
     margin-top: 20px;
     width: 100%;
-    background-color: rgb(65, 71, 71);
+
     display: block;
     position: relative;
+}
 
+.agendar-box-options-box {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agendar-box-option {
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: rgb(51, 56, 56);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s;
+}
+
+.agendar-box-modal-valor {
+    display: block;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.agendar-box-modal-botao-agendar {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: rgb(238, 0, 40);
+
+    color: rgb(38, 41, 41);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.agendar-modal-option-checkbox {
+    display: none;
+}
+
+.agendar-box-option {
+    display: flex;
+}
+
+.agendar-box-option i {
+    width: 20%;
+    height: 100%;
+    
+    margin-top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.agendar-option-nome {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    
 }
 
 

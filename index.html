@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="">Início</a></li>
                     <li><a href="#secao-3">Sobre nós</a></li>
-                    <li><a >Agendar</a></li> <!-- WhatsApp Link --> 
+                    <li><a onclick="aparacerAgendarModal()">Agendar</a></li> <!-- WhatsApp Link --> 
                 </ul>
             </nav>
         </div>
@@ -165,18 +165,31 @@
 
     </footer>
 
-    <div class="agendar-box-modal-fundo-escuro"></div>
-    <div class="agendar-box-modal-box">
+    <div class="agendar-box-modal-fundo-escuro" id="agendar-box-modal-fundo-escuro" onclick="desaparecerAgendarModal()"></div>
+    <div class="agendar-box-modal-box" id="agendar-box-modal-box">
         <div class="agendar-box-modal">
             <div class="dentro-agendar-box-modal">
                 <h1>Agendamento</h1>
-                <div class="agendar-box-modal-botoes">
-                    
+                <div class="agendar-box-modal-botoes-box">
+                    <div class="agendar-box-options-box">
+                        <label for="agendar-modal-option-check-1" class="agendar-box-option agendar-box-option-cabelo" id="a-m-option-1" onclick="agendarOption(1, document.getElementById('agendar-modal-option-check-1')), agendarValor()" preco='30'>
+                            <i class="fas fa-cut"></i> <span class="agendar-option-nome">Cabelo</span>
+                        </label>
+                        <label for="agendar-modal-option-check-2" class="agendar-box-option agendar-box-option-barba" id="a-m-option-2" onclick="agendarOption(2, document.getElementById('agendar-modal-option-check-2')), agendarValor()" preco='20'>
+                            <i class="fas fa-cut"></i> <span class="agendar-option-nome">Barba</span>
+                        </label>
+
+                        <input type="checkbox" id="agendar-modal-option-check-1" class="agendar-modal-option-checkbox">
+                        <input type="checkbox" id="agendar-modal-option-check-2" class="agendar-modal-option-checkbox">
+                    </div>
+                    <span class="agendar-box-modal-valor" id="agendar-box-modal-valor">R$ 0</span>
+                    <a href="" class="agendar-box-modal-botao-agendar">AGENDAR</a>
                 </div>
             </div>
             
         </div>
     </div>
+    <input type="checkbox" id="aparacer-agendar-modal-check">
 
     <script src="global_js.js"></script>
 
